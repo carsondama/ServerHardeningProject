@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Project Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        main {
+            margin-top: 60px;
+        }
+        
+        section {
+            padding: 50px 0;
+        }
+        
+        section:nth-child(even) {
+            background-color: white;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 70px 0;
+        }
+        
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 25px;
+            color: #6c757d;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #343a40;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #23272b;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        
+        .section-title p {
+            color: #6c757d;
+        }
+        
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .team-member {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 300px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        
+        .member-image {
+            height: 200px;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-weight: bold;
+        }
+        
+        .member-info {
+            padding: 20px;
+        }
+        
+        .member-info h3 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 20px;
+        }
+        
+        .member-role {
+            color: #6c757d;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        
+        .member-details p {
+            margin: 8px 0;
+        }
+        
+        
+        .social-link {
+            display: block;
+            margin-top: 15px;
+            color: #343a40;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .social-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-logo {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        
+        @media (max-width: 768px) {
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .member-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center top;  
+    display: block;  
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">IT Security Server Hardening and Ethical Hacking</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Project Summary</h1>
+                <p>The Akwaaba Server Hardening Project focuses on enhancing the security 
+                    of IT infrastructure by implementing server hardening techniques and ethical hacking practices. 
+                    The primary objective is to reduce vulnerabilities and strengthen the defenses of servers in an enterprise environment. 
+                    Server hardening techniques, such as patch management, secure configurations, and user access controls, will be combined 
+                    with ethical hacking practices like penetration testing and vulnerability scanning to simulate potential attacks. The goal 
+                    is to identify weaknesses, mitigate risks, and ensure a robust security posture. </p>
+                <button class="btn">Meet Our Team</button>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Team</h2>
+                    <p>Meet the talented individuals behind this project</p>
+                </div>
+                <div class="team-container">
+                    <!-- Team Member 1 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src ="sarah.jpg" alt="Sarah Photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Sarah Jesseph</h3>
+                            <div class="member-role">Team Leader</div>
+                            <div class="member-details">
+                                <p><strong>Projected Graduation:</strong> May, 2025</p>
+                                <p><strong>Dream Job:</strong> Network Security</p>
+                                <p><strong>Internship Interest:</strong> Already Employed</p>
+                                <p><strong>Email:</strong> sarah@jesseph.com</p>
+                               
+                                <a href="https://www.linkedin.com/in/sarah-jesseph-50a4812a1/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                          <img src ="carson.jpg" alt="Carson Photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Carson Connolly</h3>
+                            <div class="member-role">Red Team</div>
+                            <div class="member-details">
+                                <p><strong>Projected Graduation:</strong> May, 2025</p>
+                                <p><strong>Dream Job:</strong> Penetration Tester</p>
+                                <p><strong>Internship Interest:</strong> Automotive Industry</p>
+                                <p><strong>Email:</strong> carsonjamesconnolly02@gmail.com</p>
+                        
+                                <a href="https://www.linkedin.com/in/carson-connolly-7b3970254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src ="yan.jpg" alt="Yan Photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Yan Liu</h3>
+                            <div class="member-role">Blue Team</div>
+                            <div class="member-details">
+                                <p><strong>Projected Graduation:</strong> December, 2025</p>
+                                <p><strong>Dream Job:</strong> Data Analytics</p>
+                                <p><strong>Internship Interest:</strong> Field/Company</p>
+                                <p><strong>Email:</strong> Kingbird_lee04@hotmail.com</p>
+                                
+                                <a href="#" class="social-link">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 4 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src ="pablo.jpg" alt="Pablo Photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Pablo Fabbrini</h3>
+                            <div class="member-role">Blue Team</div>
+                            <div class="member-details">
+                                <p><strong>Projected Graduation:</strong> Month, Year</p>
+                                <p><strong>Dream Job:</strong> Job Title</p>
+                                <p><strong>Internship Interest:</strong> Field/Company</p>
+                                <p><strong>Email:</strong> name4@example.com</p>
+                               
+                                <a href="https://www.linkedin.com/in/pablo-fabbrini/" class="social-link">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Team Member 5 -->
+                    <div class="team-member">
+                        <div class="member-image">
+                            <img src ="evan.jpg" alt="Evan Photo">
+                        </div>
+                        <div class="member-info">
+                            <h3>Evan Livsey</h3>
+                            <div class="member-role">Red Team</div>
+                            <div class="member-details">
+                                <p><strong>Projected Graduation:</strong> May, 2025</p>
+                                <p><strong>Dream Job:</strong> Digital Forensics Analyst or Infrastructure Architech</p>
+                                <p><strong>Internship Interest:</strong> Government or Financial Sector</p>
+                                <p><strong>Email:</strong> eklivsey1@outlook.com</p>
+                            
+                                <a href="https://www.linkedin.com/in/evan-livsey/" class="social-link">LinkedIn Profile</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">IT Security Server Hardening and Ethical Hacking</div>
+              
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
